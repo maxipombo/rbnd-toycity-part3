@@ -16,20 +16,24 @@ class Product
     @@products
   end
 
+# Search a product by title
   def self.find_by_title(title)
     @@products.find {|product| product.title == title}
   end
 
+# Array of all products with a stock greater than zero
   def self.in_stock
-    @@products.find {|product| product.in_stock}
+    @@products.select {|product| product.in_stock?}
   end
 
+# See if a product has stock
   def in_stock?
     @stock > 0
   end
 
   private
 
+# Add a product only if doesn't exist
   def add_to_products
     if @@products.to_s.include? @title
       raise DuplicateProductError, "'#{title}' already exists."
