@@ -19,6 +19,11 @@ class Customer
     @@customers.find {|product| product.name == name}
   end
 
+# Customer purchase a product
+  def purchase(product)
+    Transaction.new(self, product)
+  end
+
   private
 
 # Add a customer only if doesn't exist

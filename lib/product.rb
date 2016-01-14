@@ -31,6 +31,11 @@ class Product
     @stock > 0
   end
 
+# Reducing stock for a purchase
+  def purchase
+    @stock -= 1
+  end
+
   private
 
 # Add a product only if doesn't exist
