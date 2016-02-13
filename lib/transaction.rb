@@ -19,6 +19,16 @@ class Transaction
     @@transactions.find {|transaction| transaction.id == id}
   end
 
+# Search a transaction by product
+  def self.findproduct(product)
+    @@transactions.find {|transaction| transaction.product == product}
+  end
+
+# Search a transaction by customer
+  def self.findcustomer(customer)
+    @@transactions.find {|transaction| transaction.customer == customer}
+  end
+
 # Process transaction
   def process_transaction
     if product.in_stock?

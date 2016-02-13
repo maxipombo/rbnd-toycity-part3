@@ -1,0 +1,17 @@
+How long did you spend working on this project?
+
+I think the total was about 6 hours plus 5 hours to create two additional features.
+
+What was the most rewarding challenge you conquered?
+
+I was working around 3 hours per day, until I left because of my vacations and
+later I had college exams, so I spent 20 days without touching the code.
+Then I didn't know where to start to add the additional features that I had to build but
+the comments that I had written were very helpful!
+
+What two additional features did you build? Why?
+I built "Search a transaction by customer" and "Search a transaction by product", I think that can be very useful.
+
+Where do you still have room to grow?
+Everywhere! I have to work more with big files and complex databases. Also, I need
+more practice to think more effectively.
